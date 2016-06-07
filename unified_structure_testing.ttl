@@ -6,9 +6,9 @@
 
 <http://vocab.cs.uni-bonn.de/unistruct> a owl:Ontology .
 
-:Vehicle rdf:type owl:Class
+:Vehicle rdf:type owl:Class ;
          rdfs:comment "Vehicle"@en;
-         rdfs:label "Vehicle"@en ;
+         rdfs:label "Vehicle"@en .
 
 :Bus     rdf:type owl:Class ;
          rdfs:comment "Bus"@en;

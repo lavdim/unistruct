@@ -1,66 +1,37 @@
-@prefix : <http://vocab.cs.uni-bonn.de/unistruct#> .
-@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://vocab.cs.uni-bonn.de/unistruct> .
+# Saved by TopBraid on Tue Jun 07 21:00:09 CEST 2016
+# baseURI: http://vocab.cs.uni-bonn.de/unistruct
 
-<http://vocab.cs.uni-bonn.de/unistruct> rdf:type owl:Ontology .
+@prefix :        <http://vocab.cs.uni-bonn.de/unistruct#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xs:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://vocab.cs.uni-bonn.de/unistruct>
+      rdf:type owl:Ontology .
 
-#################################################################
-#
-#    Classes
-#
-#################################################################
+:Bus  rdf:type owl:Class ;
+      rdfs:comment "Bus"@en ;
+      rdfs:label "MinBus"@en ;
+      rdfs:subClassOf :Vehicle .
 
+:Car  rdf:type owl:Class ;
+      rdfs:comment "Car"@en ;
+      rdfs:label "Car"@en ;
+      rdfs:subClassOf :Vehicle .
 
-###  http://vocab.cs.uni-bonn.de/unistruct#Bus
+:CompactCar
+      rdf:type :Car ;
+      rdfs:label "CompactCar"@en .
 
-:Bus rdf:type owl:Class ;
-     
-     rdfs:subClassOf :Vehicle ;
-     
-     rdfs:comment "Normal Bus"@en ;
-     
-     rdfs:label "Bus"@en .
+:Train
+      rdf:type owl:Class ;
+      rdfs:comment "Train Concept"^^xs:string ;
+      rdfs:label "Train"^^xs:string ;
+      rdfs:subClassOf :Vehicle .
 
-
-
-###  http://vocab.cs.uni-bonn.de/unistruct#Car
-
-:Car rdf:type owl:Class ;
-     
-     rdfs:subClassOf :Vehicle ;
-     
-     rdfs:comment "Car"@en ;
-     
-     rdfs:label "Car"@en .
-
-
-
-###  http://vocab.cs.uni-bonn.de/unistruct#Plane
-
-:Plane rdf:type owl:Class ;
-       
-       rdfs:subClassOf :Vehicle ;
-       
-       rdfs:comment "Plane"@en ;
-       
-       rdfs:label "Plane"@en .
-
-
-
-###  http://vocab.cs.uni-bonn.de/unistruct#Vehicle
-
-:Vehicle rdf:type owl:Class ;
-         
-         rdfs:comment "Vehicle"@en ;
-         
-         rdfs:label "Vehicle"@en .
-
-
-
-
+:Vehicle
+      rdf:type owl:Class ;
+      rdfs:comment "Vehicle"@en ;
+      rdfs:label "Vehicle"@en .

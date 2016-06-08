@@ -21,7 +21,7 @@
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Car"@en ;
-	rdfs:comment "Car"@en ;
+	rdfs:comment "Car class includes all types of car"@en ;
 	.
 
 :MiniBus
@@ -56,7 +56,10 @@
 	.
 
 :Taxi11
-	a :Taxi ;
+	a
+		:Taxi ,
+		owl:NamedIndividual
+		;
 	rdfs:label "Taxi11" ;
 	rdfs:comment "Taxi 1 of route 1" ;
 	.
@@ -66,6 +69,10 @@
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Truck"@en ;
 	rdfs:comment "Truck"@en ;
+	.
+
+:UrbanTrain
+	a owl:Class ;
 	.
 
 :Vehicle

@@ -47,7 +47,7 @@
      
      rdfs:subClassOf :Vehicle ;
      
-     rdfs:comment "Car"@en ;
+     rdfs:comment "Car class includes all types of car"@en ;
      
      rdfs:label "Car"@en .
 

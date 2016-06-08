@@ -39,14 +39,7 @@
 	rdfs:comment "Plane"@en ;
 	.
 
-:Ship
-	a owl:Class ;
-	rdfs:subClassOf :Vehicle ;
-	rdfs:label "Ship"@en ;
-	rdfs:comment "Ship"@en ;
-	.
-
-:Train
+:UrbanTrain
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Train" ;

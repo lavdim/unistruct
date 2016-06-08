@@ -24,6 +24,15 @@
 	rdfs:comment "Car"@en ;
 	.
 
+:Express
+	a
+		:Train ,
+		owl:NamedIndividual
+		;
+	rdfs:label "Express"@en ;
+	rdfs:comment "Express Train"@en ;
+	.
+
 :MiniBus
 	a
 		:Bus ,

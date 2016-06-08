@@ -1,4 +1,4 @@
-# Saved by TopBraid on Wed Jun 08 13:26:10 CEST 2016
+# Saved by TopBraid on Wed Jun 08 13:30:13 CEST 2016
 # baseURI: http://vocab.cs.uni-bonn.de/unistruct
 
 @prefix :        <http://vocab.cs.uni-bonn.de/unistruct#> .
@@ -11,6 +11,12 @@
 
 <http://vocab.cs.uni-bonn.de/unistruct>
       rdf:type owl:Ontology .
+
+:AirPlane
+      rdf:type owl:Class ;
+      rdfs:comment "Plane"@en ;
+      rdfs:label "Plane"@en ;
+      rdfs:subClassOf :Vehicle .
 
 :Bus  rdf:type owl:Class ;
       rdfs:comment "Normal Bus"@en ;
@@ -27,16 +33,10 @@
       rdfs:comment "Express Train"@en ;
       rdfs:label "Express"@en .
 
-:Plane
-      rdf:type owl:Class ;
-      rdfs:comment "Plane"@en ;
-      rdfs:label "Plane"@en ;
-      rdfs:subClassOf :Vehicle .
-
 :Taxi
       rdf:type owl:Class ;
       rdfs:comment " Taxi is a specific type of Car"^^xs:string ;
-      rdfs:label "Taxi"@en ;
+      rdfs:label "Taxi"^^xs:string ;
       rdfs:subClassOf :Car .
 
 :UrbanTrain

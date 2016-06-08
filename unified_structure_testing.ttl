@@ -46,6 +46,13 @@
 	rdfs:comment "Ship"@en ;
 	.
 
+:Train
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Train" ;
+	rdfs:comment "Train Concept" ;
+	.
+
 :Vehicle
 	a owl:Class ;
 	rdfs:label "Vehicle"@en ;

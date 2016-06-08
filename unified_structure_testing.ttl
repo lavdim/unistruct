@@ -37,7 +37,7 @@
      
      rdfs:comment "Normal Bus"@en ;
      
-     rdfs:label "Normal Bus"@en .
+     rdfs:label "NormalBus"@en .
 
 
 
@@ -50,18 +50,6 @@
      rdfs:comment "Car"@en ;
      
      rdfs:label "Car"@en .
-
-
-
-###  http://vocab.cs.uni-bonn.de/unistruct#Plane
-
-:Plane rdf:type owl:Class ;
-       
-       rdfs:subClassOf :Vehicle ;
-       
-       rdfs:comment "Plane"@en ;
-       
-       rdfs:label "Plane"@en .
 
 
 
@@ -120,14 +108,14 @@
 #################################################################
 
 
-###  http://vocab.cs.uni-bonn.de/unistruct#Express1
+###  http://vocab.cs.uni-bonn.de/unistruct#Regio
 
-:Express1 rdf:type owl:NamedIndividual ,
-                   :UrbanTrain ;
-          
-          rdfs:comment "Express Train"@en ;
-          
-          rdfs:label "Express"@en .
+:Regio rdf:type owl:NamedIndividual ,
+                :UrbanTrain ;
+       
+       rdfs:comment "Regional Train"@en ;
+       
+       rdfs:label "Regio"@en .
 
 
 

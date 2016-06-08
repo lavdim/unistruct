@@ -64,6 +64,13 @@
 	rdfs:comment "Taxi is a specific type of Car" ;
 	.
 
+:Truck
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Truck"@en ;
+	rdfs:comment "Truck"@en ;
+	.
+
 :UrbanTrain
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;

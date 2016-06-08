@@ -53,6 +53,18 @@
 
 
 
+###  http://vocab.cs.uni-bonn.de/unistruct#Taxi
+
+:Taxi rdf:type owl:Class ;
+      
+      rdfs:subClassOf :Car ;
+      
+      rdfs:comment " Taxi is a specific type of Car"^^xsd:string ;
+      
+      rdfs:label "Taxi"^^xsd:string .
+
+
+
 ###  http://vocab.cs.uni-bonn.de/unistruct#UrbanTrain
 
 :UrbanTrain rdf:type owl:Class ;

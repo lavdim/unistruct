@@ -95,17 +95,6 @@
 
 
 
-###  http://vocab.cs.uni-bonn.de/unistruct#Bus0608
-
-:Bus0608 rdf:type owl:NamedIndividual ,
-                  :Bus ;
-         
-         rdfs:comment "Bus of 08 of line 06"^^xsd:string ;
-         
-         rdfs:label "Bus0608"^^xsd:string .
-
-
-
 ###  http://vocab.cs.uni-bonn.de/unistruct#Express
 
 :Express rdf:type owl:NamedIndividual ,

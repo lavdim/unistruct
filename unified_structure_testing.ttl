@@ -65,6 +65,18 @@
 
 
 
+###  http://vocab.cs.uni-bonn.de/unistruct#Truck
+
+:Truck rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Vehicle ;
+       
+       rdfs:comment "Truck" ;
+       
+       rdfs:label "Truck"@en .
+
+
+
 ###  http://vocab.cs.uni-bonn.de/unistruct#UrbanTrain
 
 :UrbanTrain rdf:type owl:Class ;

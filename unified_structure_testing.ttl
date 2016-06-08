@@ -13,7 +13,7 @@
 :Bus
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;
-	rdfs:label "Mini Bus"@en ;
+	rdfs:label "Bus"@en ;
 	rdfs:comment "Bus"@en ;
 	.
 
@@ -29,7 +29,7 @@
 		:Bus ,
 		owl:NamedIndividual
 		;
-	rdfs:label "MiniBus"@en ;
+	rdfs:label "Normal MiniBus"@en ;
 	.
 
 :Plane
@@ -37,6 +37,13 @@
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Plane"@en ;
 	rdfs:comment "Plane"@en ;
+	.
+
+:Ship
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Ship"@en ;
+	rdfs:comment "Ship"@en ;
 	.
 
 :Vehicle

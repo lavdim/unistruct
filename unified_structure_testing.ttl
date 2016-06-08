@@ -2,26 +2,45 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://vocab.cs.uni-bonn.de/unistruct> a owl:Ontology .
+<http://vocab.cs.uni-bonn.de/unistruct>
+	a owl:Ontology ;
+	.
 
-:Vehicle rdf:type owl:Class ;
-         rdfs:comment "Vehicle"@en;
-         rdfs:label "Vehicle"@en .
+:Bus
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Mini Bus"@en ;
+	rdfs:comment "Bus"@en ;
+	.
 
-:Bus     rdf:type owl:Class ;
-         rdfs:comment "Bus"@en;
-         rdfs:label "Bus"@en ;
-         rdfs:subClassOf :Vehicle .
+:Car
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Car"@en ;
+	rdfs:comment "Car"@en ;
+	.
 
-:MiniBus rdf:type :Bus ;
-         rdfs:label "MiniBus"@en .
-         
-:Car     rdf:type owl:Class ;
-         rdfs:comment "Car"@en;
-         rdfs:label "Car"@en ;
-         rdfs:subClassOf :Vehicle .
-         
-:CompactCar rdf:type :Car ;
-         rdfs:label "CompactCar"@en .
+:MiniBus
+	a
+		:Bus ,
+		owl:NamedIndividual
+		;
+	rdfs:label "MiniBus"@en ;
+	.
+
+:Plane
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Plane"@en ;
+	rdfs:comment "Plane"@en ;
+	.
+
+:Vehicle
+	a owl:Class ;
+	rdfs:label "Vehicle"@en ;
+	rdfs:comment "Vehicle"@en ;
+	.

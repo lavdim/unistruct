@@ -13,7 +13,7 @@
 :Bus
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;
-	rdfs:label "Normal Bus"@en ;
+	rdfs:label "NormalBus"@en ;
 	rdfs:comment "Bus"@en ;
 	.
 
@@ -22,15 +22,6 @@
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Car"@en ;
 	rdfs:comment "Car"@en ;
-	.
-
-:Express1
-	a
-		:UrbanTrain ,
-		owl:NamedIndividual
-		;
-	rdfs:label "Express"@en ;
-	rdfs:comment "Express Train"@en ;
 	.
 
 :MiniBus
@@ -46,6 +37,15 @@
 	rdfs:subClassOf :Vehicle ;
 	rdfs:label "Plane"@en ;
 	rdfs:comment "Plane"@en ;
+	.
+
+:Regio
+	a
+		:UrbanTrain ,
+		owl:NamedIndividual
+		;
+	rdfs:label "Regio"@en ;
+	rdfs:comment "Regio"@en ;
 	.
 
 :Taxi

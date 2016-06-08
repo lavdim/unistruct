@@ -10,15 +10,6 @@
 	a owl:Ontology ;
 	.
 
-:AirPlane
-	a
-		:Plane ,
-		owl:NamedIndividual
-		;
-	rdfs:label "AirPlane"@en ;
-	rdfs:comment "AirPlane"@en ;
-	.
-
 :Bus
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;
@@ -33,7 +24,7 @@
 	rdfs:comment "Car"@en ;
 	.
 
-:Express
+:Express1
 	a
 		:UrbanTrain ,
 		owl:NamedIndividual

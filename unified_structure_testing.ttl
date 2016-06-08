@@ -13,7 +13,7 @@
 :Bus
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;
-	rdfs:label "Bus"@en ;
+	rdfs:label "Normal Bus"@en ;
 	rdfs:comment "Bus"@en ;
 	.
 

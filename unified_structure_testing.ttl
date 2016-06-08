@@ -26,12 +26,6 @@
 	rdfs:comment "Bus"@en ;
 	.
 
-:Bus0608
-	a :Bus ;
-	rdfs:label "Bus0608" ;
-	rdfs:comment "Bus of 08 of line 06" ;
-	.
-
 :Car
 	a owl:Class ;
 	rdfs:subClassOf :Vehicle ;

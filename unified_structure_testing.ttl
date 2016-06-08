@@ -119,14 +119,14 @@
 
 
 
-###  http://vocab.cs.uni-bonn.de/unistruct#Taxi11
+###  http://vocab.cs.uni-bonn.de/unistruct#Truck1
 
-:Taxi11 rdf:type owl:NamedIndividual ,
-                 :Taxi ;
+:Truck1 rdf:type owl:NamedIndividual ,
+                 :Truck ;
         
-        rdfs:comment " Taxi 1 of route 1"^^xsd:string ;
+        rdfs:comment " Truck1"^^xsd:string ;
         
-        rdfs:label "Taxi11"^^xsd:string .
+        rdfs:label " Truck1"^^xsd:string .
 
 
 

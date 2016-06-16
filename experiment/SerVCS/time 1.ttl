@@ -1,0 +1,57 @@
+@prefix : <http://vocab.cs.uni-bonn.de/unistruct#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocab.cs.uni-bonn.de/unistruct>
+	a owl:Ontology ;
+	.
+
+:Bus
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+<<<<<<< HEAD
+	rdfs:label "Mini Bus"@en ;
+=======
+	rdfs:label "Bus"@en ;
+>>>>>>> 52b46c249c3ca90750d45f574e83561dbf933a74
+	rdfs:comment "Bus"@en ;
+	.
+
+:Car
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Car"@en ;
+	rdfs:comment "Car"@en ;
+	.
+
+:MiniBus
+<<<<<<< HEAD
+	a
+		:Bus ,
+		owl:NamedIndividual
+		;
+	rdfs:label "MiniBus"@en ;
+	.
+
+:Plane
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Plane"@en ;
+	rdfs:comment "Plane"@en ;
+	.
+
+=======
+	a :Bus ;
+	rdfs:label "MiniBus"@en ;
+	.
+
+>>>>>>> 52b46c249c3ca90750d45f574e83561dbf933a74
+:Vehicle
+	a owl:Class ;
+	rdfs:label "Vehicle"@en ;
+	rdfs:comment "Vehicle"@en ;
+	.

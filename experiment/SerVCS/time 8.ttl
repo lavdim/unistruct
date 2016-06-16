@@ -1,0 +1,87 @@
+@prefix : <http://vocab.cs.uni-bonn.de/unistruct#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocab.cs.uni-bonn.de/unistruct>
+	a owl:Ontology ;
+	.
+
+:Bus
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Normal Bus"@en ;
+	rdfs:comment "Bus"@en ;
+	.
+
+:Car
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Car"@en ;
+<<<<<<< HEAD
+	rdfs:comment "Car class includes all types of car"@en ;
+=======
+	rdfs:comment "Representing the Car concept"@en ;
+>>>>>>> d15ab96ee0d43caddbc3acd2f9f012b48f69744a
+	.
+
+:MiniBus
+	a
+		:Bus ,
+		owl:NamedIndividual
+		;
+	rdfs:label "MiniBus"@en ;
+	.
+
+:Plane
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Plane"@en ;
+	rdfs:comment "Plane"@en ;
+	.
+
+:Taxi
+	a owl:Class ;
+	rdfs:subClassOf :Car ;
+	rdfs:label "Taxi" ;
+	rdfs:comment "Taxi is a specific type of Car" ;
+	.
+
+<<<<<<< HEAD
+:Taxi11
+	a
+		:Taxi ,
+		owl:NamedIndividual
+		;
+	rdfs:label "Taxi11" ;
+	rdfs:comment "Taxi 1 of route 1" ;
+	.
+
+=======
+>>>>>>> d15ab96ee0d43caddbc3acd2f9f012b48f69744a
+:Truck
+	a owl:Class ;
+	rdfs:subClassOf :Vehicle ;
+	rdfs:label "Truck"@en ;
+	rdfs:comment "Truck"@en ;
+	.
+
+<<<<<<< HEAD
+:UrbanTrain
+	a owl:Class ;
+=======
+:Truck1
+	a :Truck ;
+	rdfs:label "Taxi11" ;
+	rdfs:comment "Truck1" ;
+>>>>>>> d15ab96ee0d43caddbc3acd2f9f012b48f69744a
+	.
+
+:Vehicle
+	a owl:Class ;
+	rdfs:label "Vehicle"@en ;
+	rdfs:comment "Vehicle"@en ;
+	.

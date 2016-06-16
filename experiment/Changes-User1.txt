@@ -1,0 +1,116 @@
+Time Instance 1
+[CH3] Deleting CompactCar Instance
+
+--------------------------------------------------
+Time Instance 2
+
+[CH1]Adding Class Train
+
+:Train
+      rdf:type owl:Class ;
+      rdfs:comment "Train Concept"^^xs:string ;
+      rdfs:label "Train"^^xs:string ;
+      rdfs:subClassOf :Vehicle .
+	  
+[CH2]Modyfiying MiniBus rdfs:label 
+
+rdfs:label "MinBus"@en ;	  
+--------------------------------------------------
+
+Time Instance 3
+
+[CH2]Renaming :Train to :UrbanTrain
+
+[CH3]Deleting Ship Class
+
+--------------------------------------------------
+Time Instance 4
+:Bus0608
+      rdf:type :Bus ;
+      rdfs:comment "Bus of 08 of line 06"^^xs:string ;
+      rdfs:label "Bus0608"^^xs:string .
+
+--------------------------------------------------
+Time instance 5
+
+[CH1]Adding Taxi as a SubClass of Car
+:Taxi
+      a       owl:Class ;
+      rdfs:comment " Taxi is a specific type of Car"^^xs:string ;
+      rdfs:label "Taxi"^^xs:string ;
+      rdfs:subClassOf :Car .
+	  
+[CH3]Deleting Instance of Bus
+:Bus0608 rdf:type owl:NamedIndividual ,
+                  :Bus ;
+         
+         rdfs:comment "Bus of 08 of line 06"^^xsd:string ;
+         
+         rdfs:label "Bus0608"^^xsd:string .
+
+--------------------------------------------------	  
+Time instance 6
+
+[CH3]Deleting Instance of AirPlane
+:AirPlane
+      a       owl:NamedIndividual , :Plane ;
+      rdfs:comment "AirPlane"@en ;
+      rdfs:label "AirPlane"@en .
+
+[CH2]Modifying Instance Express to Express1	  
+:Express1
+      a       owl:NamedIndividual , :UrbanTrain ;
+      rdfs:comment "Express Train"@en ;
+      rdfs:label "Express"@en .
+	  
+[CH2]Modyfing Class Plane to AirPlane
+
+:AirPlane
+      a       owl:Class ;
+      rdfs:comment "Plane"@en ;
+      rdfs:label "Plane"@en ;
+      rdfs:subClassOf :Vehicle .	
+
+-------------------------------------------------
+Time instance 7
+
+[CH3]Deleting 
+:Express1
+      a       owl:NamedIndividual , :UrbanTrain ;
+      rdfs:comment "Express Train"@en ;
+      rdfs:label "Express"@en .
+
+[CH1]Adding	  
+:Taxi11
+      a       :Taxi ;
+      rdfs:comment " Taxi 1 of route 1"^^xs:string ;
+      rdfs:label "Taxi11"^^xs:string .
+
+[CH3]Deleting
+:UrbanTrain
+      a       owl:Class ;
+      rdfs:comment "Train Concept"@en ;
+      rdfs:label "Train"@en ;
+      rdfs:subClassOf :Vehicle .
+
+-------------------------------------------------	  
+Time instance 8
+
+[CH3]Deleting 
+:Taxi11
+      a       owl:NamedIndividual , :Taxi ;
+      rdfs:comment " Taxi 1 of route 1"^^xs:string ;
+      rdfs:label "Taxi11"^^xs:string .
+
+[CH2]Modifying rdfs:comment in Car Class	  
+
+:Car  a       owl:Class ;
+      rdfs:comment "Representing the Car concept"@en ;
+      rdfs:label "Car"@en ;
+      rdfs:subClassOf :Vehicle .
+
+[CH1]Adding
+:Truck1
+      a       :Truck ;
+      rdfs:comment " Truck1"^^xs:string ;
+      rdfs:label " Truck1"^^xs:string .

@@ -1,0 +1,128 @@
+
+Time Instance 1:
+
+[CH1] Adding
+
+:Plane rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Vehicle ;
+       
+       rdfs:comment "Plane"@en ;
+       
+       rdfs:label "Plane"@en .
+
+[CH2] Modifying
+rdfs:label "Bus"@en. is changed trdfs:comment "Mini Bus"@en ;
+
+[CH3] Deleting
+
+:CompactCar rdf:type :Car ;
+         rdfs:label "CompactCar"@en .
+
+---------------------------------------------------------
+Time Instance 2: 
+
+[CH2] Modifying
+ rdfs:label "MiniBus"@en. is changed to rdfs:label "Normal MiniBus"@en .
+
+[CH1] The following class has been added
+
+:Ship rdf:type owl:Class ;
+      
+      rdfs:subClassOf :Vehicle ;
+      
+      rdfs:comment "Ship"@en ;
+      
+      rdfs:label "Ship"@en .
+
+----------------------------------------------------------
+
+Time Instance 3: 
+
+[CH1] Adding
+
+        :Express rdf:type owl:NamedIndividual ,
+                  :Train ;
+         
+         rdfs:comment "Express Train"@en ;
+         
+         rdfs:label "Express"@en .
+
+------------------------------------------------------
+
+Time Instance 4: 
+
+[CH1] Adding
+
+:AirPlane rdf:type owl:NamedIndividual ,
+                   :Plane ;
+          
+          rdfs:comment "AirPlane"@en ;
+          
+          rdfs:label "AirPlane"@en .
+
+-----------------------------------------------------
+Time Instance 5: 
+
+[CH3] deleting the following individual
+
+:Bus0608 rdf:type owl:NamedIndividual ,
+                  :Bus ;
+         
+         rdfs:comment "Bus of 08 of line 06"^^xsd:string ;
+         
+         rdfs:label "Bus0608"^^xsd:string .
+
+-----------------------------------------------------
+Time Instance 6: 
+
+[CH1] Adding
+
+:Truck rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Vehicle ;
+       
+       rdfs:comment "Truck" ;
+       
+       rdfs:label "Truck"@en .
+
+-----------------------------------------------------
+
+Time Instance 7: 
+
+[CH1] Adding
+
+:Regio rdf:type owl:NamedIndividual ,
+                :UrbanTrain ;
+       
+       rdfs:comment "Regional Train"@en ;
+       
+       rdfs:label "Regio"@en .
+
+[CH2] Modifying
+
+rdfs:label "Normal Bus"@en . is changed to  rdfs:label "NormalBus"@en .
+
+
+[CH3] Removing
+
+:Express1 rdf:type owl:NamedIndividual ,
+                   :UrbanTrain ;
+          
+          rdfs:comment "Express Train"@en ;
+          
+          rdfs:label "Express"@en .
+
+---------------------------------------------------
+Time Instance 8: 
+
+[CH2] Modifying
+
+rdfs:comment "Car"@en ; is changed to rdfs:comment "Car class includes all types of car"@en ;
+
+
+
+
+
+
+
